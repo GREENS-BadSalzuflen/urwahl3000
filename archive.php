@@ -2,7 +2,7 @@
 			<div id="main" class="ninecol first clearfix" role="main">
 				
 					    <?php if (is_category()) { ?>
-						    <div class="archive-title">
+						    <div class="archive-title hentry clearfix">
 						    <h1 class="h2"><?php single_cat_title(); ?></h1>
 						    <?php echo category_description(); ?>
 						    </div>
