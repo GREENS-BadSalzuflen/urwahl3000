@@ -1040,7 +1040,7 @@ h6 {font-size:1em;}
   .widget {margin: 0 0 2em 0;padding: 1.5em;border: 0;background: #e6e6e6;box-shadow: 5px 5px 10px rgba(0,0,0,0.2);}
   	.sidebar .widget:last-of-type {margin-bottom: 2em;}
   	.widget ul li {margin-bottom: 0.5em;/* deep nesting */}
-  	.widget ul li ul {margin-top: 0.75em;padding-left: 1em;}
+  	.widget ul li ul {margin-top: 0.75em;margin-left: 0;padding-left: 1em;}
   	.widget.widget_sp_image {padding: 0;background: transparent!important;box-shadow: 0 0 0 !important;  }
   	.widget_search #search, .widget_search .button-submit {box-shadow: 5px 5px 10px rgba(0,0,0,0.2);}
   	.widget_search {display: block;}
