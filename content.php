@@ -11,19 +11,7 @@
 									
 																		
 									<footer class="article-footer">
-												
-												<?php 	$posttags = get_the_tags();
-											 	if ($posttags) {
-											 		?><p class="byline"><?php
-											 		foreach($posttags as $tag) {
-											 		echo '' .$tag->name. ' '; 
-										  			}
-										  		?></p><?php	
-												} else {
-													
-													?> <p class="byline"><?php the_category(', '); ?></p><?php
-												}
-										?>		
+										<?php get_template_part( 'categories-and-tags', get_post_format() ); ?>	
 									</footer> 										 
 								 
 									 <header class="article-header">							

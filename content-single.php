@@ -16,18 +16,7 @@
 
 						
 						    <header class="article-header">							
-							   	<?php 	$posttags = get_the_tags();
-											 	if ($posttags) {
-											 		?><p class="byline"><?php
-											 		foreach($posttags as $tag) {
-											 		echo '' .$tag->name. ' '; 
-										  			}
-										  		?></p><?php	
-												} else {
-													
-													?> <p class="byline"><?php the_category(', '); ?></p><?php
-												}
-										?>		
+							   	<?php get_template_part( 'categories-and-tags', get_post_format() ); ?>	
 							    <h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 							     
 						    </header>
