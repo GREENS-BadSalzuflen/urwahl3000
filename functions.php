@@ -16,6 +16,7 @@ require_once('functions/theme-comments.php');
 require_once('functions/theme-shortcodes.php');
 require_once('functions/admin-dashboard.php');
 
+@include_once('functions/theme-custom-functions.php');
 
 require 'functions/theme-update.php';
 $MyThemeUpdateChecker = new ThemeUpdateChecker(
