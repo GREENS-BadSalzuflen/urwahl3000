@@ -842,11 +842,12 @@ h6 {font-size:1em;}
 				#nav-main li ul {position:absolute;width:250px;background: url(../images/nav_ul2.png) 15px 0 no-repeat transparent;z-index:9;box-shadow: 0 10px 10px rgba(0,0,0,0.2);	}
 					#nav-main li ul li {display:block;float: none;font-size:0.9em;border: 0;margin: 0;padding: 0;}
 						#nav-main li ul li a,  #nav-main li.current-menu-parent li a,  #nav-main li.current-menu-item li a {background: #fff;color:#0a321e;border: 0;padding: 0.5em 1.2em;font-family: 'PT Sans bold', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;	}
-						 #nav-main li.current-menu-parent li a:hover,#nav-main li.current-menu-item li a:hover,#nav-main li ul li a:hover,#nav-main li.current-menu-parent li.current-menu-item a {color:#fff; background: #0a321e; }
+						 #nav-main li.current-menu-parent li a:hover,#nav-main li.current-menu-item li a:hover,#nav-main li ul li a:hover,#nav-main li.current-menu-parent li.current-menu-item a, #nav-main li.current-post-parent a {color:#fff; background: #0a321e; }
 						 #nav-main li ul li a:before {}
 				/*Aktives Element */
 				#nav-main li.current-menu-item a, #nav-main li.current-menu-parent a {color: #ffe000;font-family: 'Arvo Regular', 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;}
 					#nav-main li.current-menu-item li a, #nav-main li.current-menu-parent li a {background: #fff;color:#0a321e;	}
+					#nav-main li ul > li.current-post-parent a {color:#fff;background: #0a321e;font-family: 'PT Sans bold', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;}
 					
   
   
