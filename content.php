@@ -19,7 +19,7 @@
 									</header>
 							
 								
-									<section class="entry-content"><?php the_excerpt(); ?><p><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="readmore">Weiterlesen »</a></p></section>
+									<section class="entry-content"><?php the_excerpt(); ?><p><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="readmore"><?php _e('Weiterlesen »', 'urwahl3000') ?></a></p></section>
 								
 
 								</article> 					    

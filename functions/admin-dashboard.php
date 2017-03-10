@@ -46,7 +46,7 @@ function kr8_rss_dashboard_widget() {
 	else foreach ($items as $item) { ?>
 
 	<h4 style="margin-bottom: 0;">
-		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date(__('j F Y @ g:i a', 'kr8theme'), $item->get_date('Y-m-d H:i:s')); ?>" target="_blank">
+		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date(__('j F Y @ g:i a', 'urwahl3000'), $item->get_date('Y-m-d H:i:s')); ?>" target="_blank">
 			<?php echo $item->get_title(); ?>
 		</a>
 	</h4>
@@ -74,8 +74,8 @@ function kr8_doku_widget() { ?>
 
 // calling all custom dashboard widgets
 function kr8_custom_dashboard_widgets() {
-	wp_add_dashboard_widget('kr8_rss_dashboard_widget', __('Neues von kre8tiv - Benjamin Jopen', 'kr8theme'), 'kr8_rss_dashboard_widget');
-	wp_add_dashboard_widget('kr8_doku_widget', __('Urwahl3000 Dokumentation', 'kr8theme'), 'kr8_doku_widget');
+	wp_add_dashboard_widget('kr8_rss_dashboard_widget', __('Neues von kre8tiv - Benjamin Jopen', 'urwahl3000'), 'kr8_rss_dashboard_widget');
+	wp_add_dashboard_widget('kr8_doku_widget', __('Urwahl3000 Dokumentation', 'urwahl3000'), 'kr8_doku_widget');
 	/*
 	Be sure to drop any other created Dashboard Widgets
 	in this function and they will all load.
@@ -122,7 +122,7 @@ you like.
 
 // Custom Backend Footer
 function kr8_custom_admin_footer() {
-	_e('<span id="footer-thankyou"><a href="http://kre8tiv.de/urwahl3000" target="_blank">Urwahl3000</a></span> - entwickelt von <a href="http://kre8tiv.de" target="_blank">Benjamin Jopen</a>.', 'kr8theme');
+	_e('<span id="footer-thankyou"><a href="http://kre8tiv.de/urwahl3000" target="_blank">Urwahl3000</a></span> - entwickelt von <a href="http://kre8tiv.de" target="_blank">Benjamin Jopen</a>.', 'urwahl3000');
 }
 
 // adding it to the admin area

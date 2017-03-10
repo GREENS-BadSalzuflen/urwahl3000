@@ -82,8 +82,8 @@ Template Name: Startseite mit drei Kacheln (Sticky Posts)
 					        <?php } else { ?>
 						        <nav class="wp-prev-next">
 							        <ul class="clearfix">
-								        <li class="prev-link"><?php next_posts_link(__('&laquo; Ältere Beiträge', "kr8theme")) ?></li>
-								        <li class="next-link"><?php previous_posts_link(__('Neuere Beiträge &raquo;', "kr8theme")) ?></li>
+								        <li class="prev-link"><?php next_posts_link(__('&laquo; Ältere Beiträge', 'urwahl3000')) ?></li>
+								        <li class="next-link"><?php previous_posts_link(__('Neuere Beiträge &raquo;', 'urwahl3000')) ?></li>
 							        </ul>
 					    	    </nav>
 					        <?php } ?>

@@ -9,7 +9,7 @@ The comments page
 
   if ( post_password_required() ) { ?>
   	<div class="alert help">
-    	<p class="nocomments"><?php _e("This post is password protected. Enter the password to view comments.", "kr8theme"); ?></p>
+    	<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.', 'urwahl3000'); ?></p>
   	</div>
   <?php
     return;
@@ -38,11 +38,11 @@ The comments page
 	
 	<?php
 			$comments_args = array(
-				'comment_notes_before' =>__( ''),
-				'title_reply'=>__( 'Artikel kommentieren', 'kr8theme'),
-				'comment_notes_after' =>__( '<p class="required-info"><span class="req">*</span> Pflichtfeld', 'kr8theme'),
-				'comment_field'  => '<p class="comment-form-comment"><label for="comment">' . _x( 'Dein Kommentar<span class="req">*</span>', 'kr8theme' ) . 			'</label><br/><textarea id="comment" name="comment" tabindex="4" rows="8" placeholder="Dein Kommentar hier..."></textarea></p>',
-				'label_submit'	=> __( 'Abschicken', 'kr8theme' )
+				'comment_notes_before' =>__(''),
+				'title_reply'=> __( 'Artikel kommentieren', 'urwahl3000'),
+				'comment_notes_after' => '<p class="required-info"><span class="req">*</span>' . __( 'Pflichtfeld', 'urwahl3000'),
+				'comment_field'  => '<p class="comment-form-comment"><label for="comment">' . __( 'Dein Kommentar', 'urwahl3000' ) . '<span class="req">*</span></label><br/><textarea id="comment" name="comment" tabindex="4" rows="8" placeholder="' . __( 'Dein Kommentar hier...', 'urwahl3000' ) . '"></textarea></p>',
+				'label_submit'	=> __( 'Abschicken', 'urwahl3000' )
 				
 			);
 			
@@ -80,7 +80,7 @@ The comments page
 	<?php else : // comments are closed ?>
 	
 	<!-- If comments are closed. -->
-	<!--p class="nocomments"><?php _e("Comments are closed.", "kr8theme"); ?></p-->
+	<!--p class="nocomments"><?php _e('Comments are closed.', 'urwahl3000'); ?></p-->
 
 	<?php endif; ?>
 

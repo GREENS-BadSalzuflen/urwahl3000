@@ -34,8 +34,8 @@
 					        <?php } else { ?>
 						        <nav class="wp-prev-next">
 							        <ul class="clearfix">
-								        <li class="prev-link"><?php next_posts_link(__('&laquo; Ältere Beiträge', "kr8theme")) ?></li>
-								        <li class="next-link"><?php previous_posts_link(__('Neuere Beiträge &raquo;', "kr8theme")) ?></li>
+								        <li class="prev-link"><?php next_posts_link(__('&laquo; Ältere Beiträge', 'urwahl3000')) ?></li>
+								        <li class="next-link"><?php previous_posts_link(__('Neuere Beiträge &raquo;', 'urwahl3000')) ?></li>
 							        </ul>
 					    	    </nav>
 					        <?php } ?>
@@ -44,14 +44,11 @@
 					
     					    <article id="post-not-found" class="hentry clearfix">
     						    <header class="article-header">
-    							    <h1><?php _e("Oops, Post Not Found!", "kr8theme"); ?></h1>
+    							    <h1><?php _e('Keine Beiträge.', 'urwahl3000') ?></h1>
     					    	</header>
     						    <section class="entry-content">
-    							    <p><?php _e("Uh Oh. Something is missing. Try double checking things.", "kr8theme"); ?></p>
+    							    <p><?php _e('Es konnte kein Beitrag in dieser Kategorie gefunden werden.', 'urwahl3000'); ?></p>
         						</section>
-    	    					<footer class="article-footer">
-    		    				    <p><?php _e("This is the error message in the archive.php template.", "kr8theme"); ?></p>
-    			    			</footer>
     				    	</article>
 					
 					    <?php endif; ?>

@@ -11,13 +11,13 @@ function kr8_comments($comment, $args, $depth) {
 		
 			   <?php echo get_avatar( $comment, 32 ); ?>
 			    <!-- end custom gravatar call -->
-				<?php printf(__('<cite class="fn">%s</cite>', 'kr8theme'), get_comment_author_link()) ?> 
+				<?php printf(__('<cite class="fn">%s</cite>', 'urwahl3000'), get_comment_author_link()) ?> 
 				<time datetime="<?php echo comment_time('Y-m-j'); ?>">am <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time('j. F Y')?> um <?php comment_time('H:i')?> Uhr</a></time>
-				<?php edit_comment_link(__('(Bearbeiten)', 'kr8theme'),'  ','') ?>
+				<?php edit_comment_link(__('(Bearbeiten)', 'urwahl3000'),'  ','') ?>
 			</header>
 			<?php if ($comment->comment_approved == '0') : ?>
        			<div class="alert info">
-          			<p><?php _e('Der Kommentar wartet auf Freischaltung.', 'kr8theme') ?></p>
+          			<p><?php _e('Der Kommentar wartet auf Freischaltung.', 'urwahl3000') ?></p>
           		</div>
 			<?php endif; ?>
 			<section class="comment_content clearfix">
@@ -47,14 +47,14 @@ function kr8_commentformfields($fields){
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 	
 	    $fields['author'] = '<ul id="comment-form-elements" class="clearfix">
-	  			<li><label for="author">' . __('Name', 'kr8theme') . ( $req ? '<span class="req">*</span>' : '' ) . '</label>
-	  			<input type="text" name="author" id="author" value="' . esc_attr( $commenter['comment_author'] ) . '" placeholder="'. __('Name', 'kr8theme') .'" tabindex="1"' . $aria_req . ' /></li>';
+	  			<li><label for="author">' . __('Name', 'urwahl3000') . ( $req ? '<span class="req">*</span>' : '' ) . '</label>
+	  			<input type="text" name="author" id="author" value="' . esc_attr( $commenter['comment_author'] ) . '" placeholder="'. __('Name', 'urwahl3000') .'" tabindex="1"' . $aria_req . ' /></li>';
 	  			
-	    $fields['email'] = '<li><label for="email">' . __('Mail', 'kr8theme') . ( $req ? '<span class="req">*</span>' : '' ) . ' <small>'. __('Wird nicht veröffentlicht', 'kr8theme') .'</small></label>
-	  			<input type="text" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" placeholder="'. __('Mail', 'kr8theme') .'" tabindex="2"' . $aria_req . ' /></li>';
+	    $fields['email'] = '<li><label for="email">' . __('Mail', 'urwahl3000') . ( $req ? '<span class="req">*</span>' : '' ) . ' <small>'. __('Wird nicht veröffentlicht', 'urwahl3000') .'</small></label>
+	  			<input type="text" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" placeholder="'. __('Mail', 'urwahl3000') .'" tabindex="2"' . $aria_req . ' /></li>';
 	  			
-	    $fields['url'] = '<li><label for="url">' . __('Website', 'kr8theme') . '</label>
-	  			<input type="text" name="url" id="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" placeholder="'. __('Website', 'kr8theme') .'" tabindex="3" /></li></ul>';
+	    $fields['url'] = '<li><label for="url">' . __('Website', 'urwahl3000') . '</label>
+	  			<input type="text" name="url" id="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" placeholder="'. __('Website', 'urwahl3000') .'" tabindex="3" /></li></ul>';
 	  			
 	   
 	    
